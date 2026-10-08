@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>足球小站</title>
+
+  <style>
+    /* 去掉浏览器默认边距 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 页面基础样式 */
+    body {
+      font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+      background-color: #eaf7ea;
+      color: #22332a;
+      line-height: 1.8;
+    }
+
+    /* 顶部标题栏 */
+    header {
+      background-color: #1b8a3a;
+      color: #ffffff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* 内容区域：限宽居中 */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 45px;
+    }
+
+    /* 小节标题：左侧绿色竖线 */
+    h2 {
+      color: #1b8a3a;
+      font-size: 22px;
+      border-left: 6px solid #1b8a3a;
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+
+    /* 卡片横向排列，自动换行 */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* 单张卡片 */
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 22px;
+      flex: 1 1 200px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card .icon {
+      font-size: 40px;
+    }
+
+    .card h3 {
+      color: #1b8a3a;
+      margin: 8px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #556;
+    }
+
+    /* 页脚 */
+    footer {
+      background-color: #22332a;
+      color: #ccd;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 顶部标题 -->
+  <header>
+    <h1>⚽ 足球小站</h1>
+    <p>世界第一运动，从一脚传球开始</p>
+  </header>
+
+  <div class="container">
+
+    <!-- 足球简介 -->
+    <section>
+      <h2>什么是足球？</h2>
+      <p>
+        足球是一项用脚控制球的运动，每支球队上场 11 人。
+        比赛的目标很简单：把球踢进对方的球门，比对方进得多就赢。
+        它起源于英国，如今是全世界最受欢迎的运动，每 4 年一次的世界杯
+        更是全球球迷的狂欢节日。
+      </p>
+    </section>
+
+    <!-- 足球小知识卡片 -->
+    <section>
+      <h2>足球小知识</h2>
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">👥</div>
+          <h3>11 人</h3>
+          <p>每支球队上场人数</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⏱️</div>
+          <h3>90 分钟</h3>
+          <p>上下半场各 45 分钟</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏆</div>
+          <h3>4 年</h3>
+          <p>世界杯每隔 4 年举办一次</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 更多小知识 -->
+    <section>
+      <h2>你可能不知道</h2>
+      <p>
+        只有守门员可以在自己禁区内用手碰球；标准足球场长约 100-110 米，
+        宽约 64-75 米；点球点距离球门 11 米，也就是常说的“十二码”。
+        如果一名球员在一场比赛中打进 3 球，就叫做“帽子戏法”。
+      </p>
+    </section>
+
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    © 2025 足球小站 · 用 HTML + CSS 制作
+  </footer>
+
+</body>
+</html>
